@@ -1,0 +1,17 @@
+hr {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-size: small;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.form-group {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

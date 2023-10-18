@@ -1,0 +1,51 @@
+.mat-card {
+    max-width: 400px;
+    border: 10px;
+    border-color: #000000;
+    box-shadow: 0 0 5px 0px #000000;
+    padding: 25px;
+    padding-bottom: 35px;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-size: small;
+}
+
+.mat-card-header {
+    display: block;
+}
+
+.mat-card-actions {
+    text-align: center;
+}
+
+mat-card-title {
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+}
+
+mat-card-subtitle {
+    font-size: larger;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+}
+
+.mat-card-actions {
+    padding: 10px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.form-group {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
