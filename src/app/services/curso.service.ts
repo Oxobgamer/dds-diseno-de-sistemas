@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Curso } from '../models/curso.model';
 
-const baseUrl = 'http://localhost:8080/api/cursos';
+const baseUrl = 'http://localhost:8080/cursos';
 //const baseUrl = 'http://localhost:4200/api/cursos';
 //const baseUrl = 'http://localhost:8080/cursos';
 

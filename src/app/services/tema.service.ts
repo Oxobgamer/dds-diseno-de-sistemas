@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tema } from '../models/tema.model';
 
-const baseUrl = 'http://localhost:8080/api/temas';
+const baseUrl = 'http://localhost:8080/temas';
 //const baseUrl = 'http://localhost:4200/api/temas';
 //const baseUrl = 'http://localhost:8080/temas';
 
