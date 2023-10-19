@@ -1,0 +1,41 @@
+version: "1.0"
+services:
+    www:
+        build:
+            context: .
+            args:
+                - MYSQL_DATABASE=instituto_educativo_1
+                - MYSQL_PASSWORD=dds
+        ports:
+            - "8080:8080"
+        links:
+            - db
+        networks:
+            - default
+        volumes:
+            - ./src:/app/src
+    db:
+        image: mysql:5.7.42
+        ports:
+            - "3306:3306"
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_DATABASE: instituto_educativo_1
+            MYSQL_ROOT_PASSWORD: dds
+        volumes:
+            - ./db:/docker-entrypoint-initdb.d
+            - persistent:/var/lib/mysql
+        networks:
+            - default
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db:db
+        ports:
+            - 8000:80
+        environment:
+            MYSQL_USER: root
+            MYSQL_PASSWORD: dds
+            MYSQL_ROOT_PASSWORD: dds
+volumes:
+    persistent:
